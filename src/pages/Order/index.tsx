@@ -1,11 +1,11 @@
 import { Text, View } from "react-native";
 
-const Home = () => {
+const OrderScreen = () => {
   return (
     <View>
-      <Text>Home</Text>
+      <Text>Order</Text>
     </View>
   );
 };
 
-export default Home;
+export default OrderScreen;

@@ -1,10 +1,30 @@
 {
-      "extends": "@tsconfig/react-native/tsconfig.json",
-      "compilerOptions": {
-        "baseUrl": ".",
-        "paths": {
-          "@components/*": ["src/components/*"],
-          "@assets/*": ["src/assets/*"],
-        },
-      }
-    }
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@redux/*": [
+        "src/redux/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ]
+    },
+    "strict": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.expo/types/**/*.ts",
+    "**/expo-env.d.ts"
+  ]
+}
